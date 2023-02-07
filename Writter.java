@@ -7,7 +7,7 @@ public class Writter {
             hola = String.valueOf(Arrayint[0]);
             writer.write(hola);
 
-            for(int i = 1;i <= 10; i++){
+            for(int i = 1;i <= 3000; i++){
                 hola = String.valueOf(Arrayint[i]);
                 writer.write(" "+hola);
             }

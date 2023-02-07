@@ -3,7 +3,7 @@ import java.util.*;
 public class CrearDatos {
 
     Scanner sc = new Scanner(System.in);
-    int[] Arrayint = new int[11];
+    int[] Arrayint = new int[3001];
     int Resp = 0;
     Random rand = new Random();
 
@@ -23,7 +23,7 @@ public class CrearDatos {
 
     }
     public void DatsOrga(){
-        for(int i = 0;i <= 10;i++){
+        for(int i = 0;i <= 3000;i++){
             Arrayint[i] = i;
         }
     }
