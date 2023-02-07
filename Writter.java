@@ -1,5 +1,6 @@
 import java.io.*;
 public class Writter {
+    int K = 3001;
     String hola ="";
     public void wri(int[] Arrayint){
         try {
@@ -7,7 +8,7 @@ public class Writter {
             hola = String.valueOf(Arrayint[0]);
             writer.write(hola);
 
-            for(int i = 1;i <= 3000; i++){
+            for(int i = 1;i <= K-1; i++){
                 hola = String.valueOf(Arrayint[i]);
                 writer.write(" "+hola);
             }

@@ -2,8 +2,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Controlador {
-    int[] Arrayint = new int[3001];
-    String[] ArrayString = new String[3001];
+    int K = 3001;
+    int[] Arrayint = new int[K];
+    String[] ArrayString = new String[K];
     Scanner sc = new Scanner(System.in);
     int res = 0;
     int u = Arrayint.length;
@@ -13,7 +14,7 @@ public class Controlador {
     public void Inicio(Reader reade) {
         Numeros = Reader.read();
         ArrayString = Numeros.split(" ");
-        for (int i = 0; i <= 3000; i++) {
+        for (int i = 0; i <= K-1; i++) {
             Arrayint[i] = Integer.valueOf(ArrayString[i]);
         }
         System.out.println("\nEscoja una de los distintos tipos de sort: ");

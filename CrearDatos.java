@@ -1,9 +1,10 @@
 import java.util.*;
 
 public class CrearDatos {
+    int K = 3001;
 
     Scanner sc = new Scanner(System.in);
-    int[] Arrayint = new int[3001];
+    int[] Arrayint = new int[K];
     int Resp = 0;
     Random rand = new Random();
 
@@ -23,7 +24,7 @@ public class CrearDatos {
 
     }
     public void DatsOrga(){
-        for(int i = 0;i <= 3000;i++){
+        for(int i = 0;i <= K-1;i++){
             Arrayint[i] = i;
         }
     }
