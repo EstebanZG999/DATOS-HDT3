@@ -3,7 +3,7 @@ public class Gnome {
 
 public static void GnomeSort(int Array[], int n){
     int indice = 0;
-    while(indice < 0){
+    while(indice < n){
         if(indice == 0){
             indice++;
         }

@@ -25,7 +25,8 @@ public class Controlador {
         }
 
         if(res == 2){
-
+            Merge merge = new Merge();
+            merge.contar(Arrayint, 0, Arrayint.length -1);
         }
         if(res == 3){
             QuickSort quicks = new QuickSort();
