@@ -4,7 +4,8 @@ public class Controlador {
     int[] Arrayint = new int[11];
     String[] ArrayString = new String[11];
     Scanner sc = new Scanner(System.in);
-    String res = "";
+    int res = 0;
+    int u = Arrayint.length;
 
     String Numeros = "";
 
@@ -16,34 +17,28 @@ public class Controlador {
         }
         System.out.println("\nEscoja una de los distintos tipos de sort: ");
         System.out.println("1. GnomeSort, 2. MergeSort \n3. QuickSort, 4.RadixSort, 5. BubbleSort");
+        res = sc.nextInt();
+        if(res == 1){
+            Gnome gnomos = new Gnome();
+            gnomos.GnomeSort(Arrayint,u);
+        }
 
+        if(res == 2){
 
+        }
+        if(res == 3){
+            QuickSort quicks = new QuickSort();
+            quicks.arreglar(Arrayint, 0, u-1);
+        }
+        if(res == 4){
+            Radix radi = new Radix();
 
+        }
+        if(res == 5){
 
-
-
-
-
-
-    }
-
-    public void QuickSort(int array[], int low, int high) {
-        int pivote = array[high];
-        int i = (low - 1);
-        for (int j = low; j < high; j++) {
-            if (array[j] <= pivote) {
-                i++;
-
-                int temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;
-            }
-            int temp = array[i + 1];
-            array[i + 1] = array[high];
-            array[high] = temp;
-
-            return i+1;
         }
 
     }
+
+
 }
