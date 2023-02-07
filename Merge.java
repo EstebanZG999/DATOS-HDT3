@@ -17,6 +17,7 @@ public class Merge {
         int i=0, j=0;
 
         int p = 1;
+
         while (i < n1 && j < n2) {
             if (U[i] <= V[j]) {
                 array[p] = U[i];
@@ -25,6 +26,30 @@ public class Merge {
                 array[p] = V[j];
                 j++;
             }
-        }   p++
+            p++;
+        }
+
+        while(i < n1){
+            array[p] = U[i];
+            i++;
+            p++;
+        }
+
+        while (j < n2) {
+            array[p] = V[j];
+            j++;
+            p++;
+        }
+    }
+
+    void contar(int[] array, int u, int v){
+
+        if(u < v){
+            int w = u + (v - u) / 2;
+
+            contar(array, u, w);
+            contar(array, w+1, v);
+            merge(array, u, w, v);
+        }
     }
 }

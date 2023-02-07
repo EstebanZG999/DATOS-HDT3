@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Controlador {
@@ -39,6 +40,10 @@ public class Controlador {
             Bubble bbubble = new Bubble();
             bbubble.BubbleSort(Arrayint);
         }
+        
+        System.out.println(Arrays.toString(Arrayint));
+
+
 
     }
 
