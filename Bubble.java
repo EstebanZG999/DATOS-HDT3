@@ -1,5 +1,5 @@
 public class Bubble {
-    public void BubbleSort(int Array[]){
+    public static void BubbleSort(int Array[]){
         int l = Array.length;
         for(int i = 0; i < l -1; i++){
             for(int j = 0; j < l - i -1; j++){

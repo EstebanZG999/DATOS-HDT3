@@ -3,7 +3,7 @@ import java.util.*;
 public class QuickSort {
 
 
-    int particion(int[] array, int low, int high){
+    static int particion(int[] array, int low, int high){
 
         int pivote = array[high];
         int i = (low - 1);
@@ -24,7 +24,7 @@ public class QuickSort {
         return i+1;
     }
 
-    void arreglar(int[] array, int low, int high){
+    static void arreglar(int[] array, int low, int high){
         if(low<high){
             int indice = particion(array, low, high);
 

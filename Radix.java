@@ -34,11 +34,11 @@ public class Radix {
             array[i] = salida[i];
     }
 
-    static void contarRadix(int[] array, int u){
+    static int[] contarRadix(int[] array, int u){
         int n = maximo(array, u);
 
         for(int exp = 1; n / exp > 0; exp *=10)
             contararr(array, u, exp);
+        return array;
     }
-
 }

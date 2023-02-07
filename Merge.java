@@ -1,6 +1,6 @@
 public class Merge {
 
-    void merge(int[] array, int u, int w, int v){
+    static void merge(int[] array, int u, int w, int v){
         int n1 = w - u  +1;
         int n2 = v - w;
 
@@ -42,7 +42,7 @@ public class Merge {
         }
     }
 
-    void contar(int[] array, int u, int v){
+    static void contar(int[] array, int u, int v){
 
         if(u < v){
             int w = u + (v - u) / 2;
