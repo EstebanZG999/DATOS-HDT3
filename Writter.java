@@ -4,7 +4,10 @@ public class Writter {
     public void wri(int[] Arrayint){
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("test.txt"));
-            for(int i = 0;i <= 2999; i++){
+            hola = String.valueOf(Arrayint[0]);
+            writer.write(hola);
+
+            for(int i = 1;i <= 10; i++){
                 hola = String.valueOf(Arrayint[i]);
                 writer.write(" "+hola);
             }

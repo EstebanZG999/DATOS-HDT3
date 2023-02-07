@@ -8,4 +8,5 @@ public class Main {
         control.Inicio(reade);
 
     }
+    //C:\Users\Usuario\Documents\GitHub\DATOS-HDT3\test.txt
 }
