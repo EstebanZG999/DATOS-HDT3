@@ -32,10 +32,12 @@ public class Controlador {
         }
         if(res == 4){
             Radix radi = new Radix();
+            radi.contarRadix(Arrayint, u);
 
         }
         if(res == 5){
-
+            Bubble bbubble = new Bubble();
+            bbubble.BubbleSort(Arrayint);
         }
 
     }
